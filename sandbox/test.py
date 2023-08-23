@@ -1,10 +1,9 @@
 from data import Car
-from utils import ToolGetAllPropertyObj
+from utils import print_am
+
+my_car = Car('honda', 'accord', 2007, 'red')
+my_car.hp = 201
 
 
-obj = ToolGetAllPropertyObj(Car)
-obj.print_all_attributes()
-obj.print_attributes()
-obj.print_all_methods()
-obj.print_methods()
-
+print_am(Car)
+print_am(my_car)

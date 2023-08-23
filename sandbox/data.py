@@ -26,3 +26,6 @@ class Car:
     # Метод для остановки двигателя
     def stop_engine(self):
         print(f"{self.make} {self.model}: Двигатель остановлен")
+
+    def __str__(self):
+        return f'{self.make.capitalize()} {self.model.capitalize()}'
